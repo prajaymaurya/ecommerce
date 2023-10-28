@@ -99,7 +99,14 @@ const Navbar = () => {
                       </a>
                     </div>
                   ) : (
-                    ""
+                    <div className="flow-root">
+                      <a
+                        onClick={logout}
+                        className="-m-2 block p-2 font-medium text-gray-900 cursor-pointer"
+                        style={{ color: mode === "dark" ? "white" : "" }}>
+                        Login
+                      </a>
+                    </div>
                   )}
                   <div className="flow-root">
                     <Link
@@ -227,7 +234,12 @@ const Navbar = () => {
                       Logout
                     </a>
                   ) : (
-                    ""
+                    <a
+                      onClick={logout}
+                      className="text-sm font-medium text-gray-700 cursor-pointer  "
+                      style={{ color: mode === "dark" ? "white" : "" }}>
+                      Login
+                    </a>
                   )}
                 </div>
 
